@@ -2,3 +2,15 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+
+.header-text{
+    color: #212529;
+    font-size: 4rem;
+}
+
+.body-text{
+    color: #495057;
+    font-weight: 400;
+    font-size: calc(1.275rem + .3vw);
+}
