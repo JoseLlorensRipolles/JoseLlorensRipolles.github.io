@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="images[0]" alt="Random first slide" class="img-fluid">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="images[1]" alt="Random second slide" class="img-fluid">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <div class="col-12 col-md-6">
+            <h2>Angular personal portfolio</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est magna, sagittis et sodales quis, sollicitudin id sapien. Pellentesque vel sapien magna. Mauris consequat id purus non lacinia. Suspendisse dictum tincidunt urna non finibus. Etiam vel dolor hendrerit, gravida mauris eget, euismod tortor. Aenean erat velit, accumsan id placerat quis, ultrices at tellus. Phasellus facilisis eros in lacus blandit, nec tempus dolor cursus. Pellentesque lacinia eros ut ligula iaculis maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur neque erat, consectetur id ultricies et, consectetur eget dolor. Integer ullamcorper purus sit amet lorem mattis, mollis maximus elit egestas.
+
+                Vestibulum nec odio non mauris commodo tristique. Mauris cursus sapien vitae ligula bibendum blandit. Integer porttitor elit auctor, mollis ante id, tempus erat. Vivamus ut elit ut neque blandit tristique. Morbi laoreet ipsum id velit aliquam sollicitudin. Praesent massa orci, auctor non urna vitae, pellentesque viverra eros. Etiam blandit massa eget arcu auctor, egestas placerat nulla blandit. </p>
+        </div>
+    </div>
+</div>
