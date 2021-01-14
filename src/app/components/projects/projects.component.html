@@ -1,6 +1,31 @@
 <div class="container">
     <div class="text-center">
-        <h1 class="header-text">Mis últimos proyectos</h1>
+        <h1 class="header-text">Some of my latests projects</h1>
+    </div>
+    <div class="row py-5">
+        <div class="col-12 col-md-7">
+
+            <a class="h2" href="https://josellorensripolles.github.io/Snake-AI/">Snake-AI</a>
+            <p class="body-text">
+                Reinforcement Learning agent that learns to play Snake in the browser thanks to TensorflowJS. The agent
+                uses a neural network and the Deep Q-Learning algorithm to beat you at snake. Website is written with
+                Angular and deployed in github-pages.
+        </div>
+        <div class="col-12 col-md-4">
+            <ngb-carousel *ngIf="snakeAIGifs" [showNavigationArrows]="showNavigationArrows"
+                [showNavigationIndicators]="showNavigationIndicators" [interval]=28000>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="snakeAIGifs[0]" alt="Random first slide" class="img-fluid">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="snakeAIGifs[1]" alt="Random second slide" class="img-fluid">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
     </div>
     <div class="row py-5">
         <div class="col-12 col-md-4 center-children">
@@ -19,37 +44,14 @@
             </ngb-carousel>
         </div>
         <div class="col-12 col-md-7">
-            <h2>Angular personal portfolio</h2>
+            <a class="h2" href="{{currentUrl}}">Portfolio website</a>
             <p class="body-text">
-                Personal website built from scratch using Angular and Boostrap.                Personal website built from scratch using Angular and Boostrap.
-                Personal website built from scratch using Angular and Boostrap.
-                Personal website built from scratch using Angular and Boostrap.
-                Personal website built from scratch using Angular and Boostrap.
-                Personal website built from scratch using Angular and Boostrap.
-
+                Personal website were you can get a glimpse of myself and
+                my latests endeavours. This website has been built without templates with Angular (v10) and Boostrap
+                (v4).
+                Also example of recursion.
         </div>
     </div>
 
-    <div class="row py-5">
-        <div class="col-12 col-md-7">
-            <h2>Angular personal portfolio</h2>
-            <p class="body-text">
-                Personal website built from scratch using Angular and Boostrap.
-        </div>
-        <div class="col-12 col-md-4">
-            <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
-                [showNavigationIndicators]="showNavigationIndicators">
-                <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                        <img [src]="images[0]" alt="Random first slide" class="img-fluid">
-                    </div>
-                </ng-template>
-                <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                        <img [src]="images[1]" alt="Random second slide" class="img-fluid">
-                    </div>
-                </ng-template>
-            </ngb-carousel>
-        </div>
-    </div>
+
 </div>
