@@ -12,19 +12,7 @@
                 Angular and deployed in github-pages.
         </div>
         <div class="col-12 col-md-4">
-            <ngb-carousel *ngIf="snakeAIGifs" [showNavigationArrows]="showNavigationArrows"
-                [showNavigationIndicators]="showNavigationIndicators" [interval]=28000>
-                <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                        <img [src]="snakeAIGifs[0]" alt="Random first slide" class="img-fluid">
-                    </div>
-                </ng-template>
-                <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                        <img [src]="snakeAIGifs[1]" alt="Random second slide" class="img-fluid">
-                    </div>
-                </ng-template>
-            </ngb-carousel>
+            <img [src]="snakeAIGifs[0]" alt="Trained agent" class="img-fluid">
         </div>
     </div>
     <div class="row py-5">
