@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { WhoAmIComponent } from './components/who-am-i/who-am-i.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ImageHeaderComponent } from './components/image-header/image-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WhoAmIComponent,
     ProjectsComponent,
+    ImageHeaderComponent,
   ],
   imports: [
     BrowserModule,
