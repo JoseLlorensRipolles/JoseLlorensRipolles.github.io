@@ -2,11 +2,19 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+@import url("https://use.typekit.net/vdu6grk.css");
 
 
 .header-text{
     color: #212529;
     font-size: 4rem;
+}
+
+.cooper-black{
+  font-family: cooper-black-std,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
 }
 
 .body-text{
@@ -21,8 +29,8 @@
 }
 
 .gradient-background{
-    background-color: #4158D0;
-    background-image: linear-gradient(90deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-color: #0cbaba;
+  background-image: linear-gradient(90deg, #0cbaba 0%, #2f3155 74%);
 }
 
 .bounce {
