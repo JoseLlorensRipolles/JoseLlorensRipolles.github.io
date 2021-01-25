@@ -3,25 +3,45 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 @import url("https://use.typekit.net/vdu6grk.css");
+@import "../node_modules/rfs/scss";
 
 
 .header-text{
     color: #212529;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 150;
 }
 
-.cooper-black{
-  font-family: cooper-black-std,serif;
-  font-weight: 00;
-  font-style: normal;
-  font-size: 4rem;
+@media (min-width: 576px) {
+  .header-text { font-size: 3rem; }
+}
+@media (min-width: 768px) {
+  .header-text { font-size: 3rem; }
+}
+@media (min-width: 992px) {
+  .header-text { font-size: 4rem; }
+}
+@media (min-width: 1200px) {
+  .header-text { font-size: 4.5rem; }
 }
 
 .body-text{
     color: #495057;
     font-weight: 400;
-    font-size: calc(1.275rem + .3vw);
+    font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  .body-text { font-size: 1.5rem; }
+}
+@media (min-width: 768px) {
+  .body-text { font-size: 1.5rem; }
+}
+@media (min-width: 992px) {
+  .body-text{ font-size: 1.5rem; }
+}
+@media (min-width: 1200px) {
+  .body-text { font-size: 1.5rem; }
 }
 
 .center-children{
