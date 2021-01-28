@@ -1,10 +1,23 @@
-.header-text{
-    color: #212529;
-    font-size: 4rem;
+.bullet-list-text{
+    color: #495057;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.body-text{
-    color: #495057;
-    font-weight: 400;
-    font-size: calc(1.275rem + .3vw);
+li{
+    margin: 10px
+}
+
+@media (min-width: 576px) {
+    .bullet-list-text { font-size: 1.5rem; }
+}
+@media (min-width: 768px) {
+    .bullet-list-text { font-size: 1.5rem; }
+}
+@media (min-width: 992px) {
+    .bullet-list-text{ font-size: 2rem; }
+}
+@media (min-width: 1200px) {
+    .bullet-list-text { font-size: 2rem; }
 }

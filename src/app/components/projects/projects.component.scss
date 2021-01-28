@@ -1,0 +1,17 @@
+.project-header{
+    color: #495057;
+    font-size: 1.5rem ;
+}
+
+@media (min-width: 576px) {
+    .project-header { font-size: 2rem; }
+  }
+  @media (min-width: 768px) {
+    .project-header { font-size: 2rem; }
+  }
+  @media (min-width: 992px) {
+    .project-header { font-size: 2.5rem; }
+  }
+  @media (min-width: 1200px) {
+    .project-header { font-size: 3rem; }
+  }

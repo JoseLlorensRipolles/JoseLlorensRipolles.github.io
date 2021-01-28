@@ -1,0 +1,72 @@
+<div style="background-color: beige">
+    <div class="container pt-5">
+        <div class="text-center">
+            <h1 class="header-text">Some of my latests projects</h1>
+        </div>
+        <div class="row py-3 py-md-5">
+            <div class="col-12 col-md-7">
+
+                <p class="project-header">Snake-AI </p>
+                <p class="body-text">
+                    <strong>Reinforcement Learning</strong> agent that learns to play Snake in the browser thanks to
+                    <strong>TensorflowJS</strong>. The agent
+                    uses a neural network and the <strong>Deep Q-Learning</strong> algorithm to beat you at snake.
+                    Website
+                    written with
+                    <strong>Angular</strong> and deployed in <strong>github-pages</strong>. Demo (and code) <a
+                        href="https://josellorensripolles.github.io/Snake-AI/">here</a>
+            </div>
+            <div class="col-12 col-md-4 py-3">
+                <img [src]="snakeAIGifs[0]" alt="Trained agent" class="img-fluid">
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row py-3 py-md-5">
+            <div class="col-12 col-md-4 center-children">
+                <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+                    [showNavigationIndicators]="showNavigationIndicators">
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[0]" alt="Random first slide" class="img-fluid">
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[1]" alt="Random second slide" class="img-fluid">
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div class="col-12 col-md-7 py-3">
+                <p class="project-header">Portfolio website</p>
+                <p class="body-text">
+                    <strong>Personal website</strong> where you can get a glimpse of <strong>myself</strong> and
+                    my latests <strong>endeavours</strong>. This website has been built <strong>from scratch</strong>
+                    with
+                    <strong>Angular</strong> (v10) and <strong>Boostrap</strong>
+                    (v4). Example of <a href="{{currentUrl}}">recursion</a>.
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row py-3 py-md-5">
+            <div class="col-12 col-md-7">
+                <p class="project-header">Advent of Code</p>
+                <a class="h2" href="{{currentUrl}}"></a>
+                <p class="body-text">
+                    Advent of code is a yearly challenge in which <strong>25 puzzles</strong> are released from 1 to 25
+                    of December. The puzzles can be solved in any programming language (I <a
+                        href="https://github.com/JoseLlorensRipolles/AdventOfCode20">did it</a> in
+                    <strong>Python</strong>) and cover a
+                    wide array of
+                    themes, <strong>data structures</strong> and <strong>algorithms</strong>.
+            </div>
+            <div class="col-12 col-md-4 center-children">
+                <img src="assets/img/projects/AoC20_1.png" alt="Advent of Code 2020" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
